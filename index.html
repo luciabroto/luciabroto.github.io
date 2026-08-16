@@ -34,20 +34,25 @@
             opacity: 0.5;
         }
 
+        /* HEADER */
+
         header {
-            margin-bottom: 140px;
+            margin-bottom: 150px;
         }
 
         .name {
-            font-size: clamp(42px, 8vw, 100px);
-            line-height: 0.95;
-            letter-spacing: -4px;
+            font-size: clamp(48px, 6vw, 68px);
+            line-height: 1;
+            letter-spacing: -3px;
             margin-bottom: 15px;
+            color: #4B315F;
         }
 
         .subtitle {
-            font-size: 16px;
+            font-size: 15px;
         }
+
+        /* FLOATING MENU */
 
         nav {
             position: fixed;
@@ -59,26 +64,32 @@
             z-index: 10;
         }
 
+        /* SECTIONS */
+
         section {
-            margin-bottom: 160px;
+            margin-bottom: 170px;
             max-width: 900px;
         }
 
         .section-title {
             font-size: 13px;
             text-transform: lowercase;
-            margin-bottom: 45px;
+            margin-bottom: 50px;
             letter-spacing: 1px;
         }
 
+        /* ABOUT */
+
         .about-text {
             max-width: 650px;
-            font-size: 22px;
-            line-height: 1.35;
+            font-size: 21px;
+            line-height: 1.4;
         }
 
+        /* WORKS */
+
         .works-category {
-            margin-bottom: 70px;
+            margin-bottom: 80px;
         }
 
         .category-title {
@@ -91,33 +102,44 @@
             display: flex;
             justify-content: space-between;
             gap: 30px;
-            padding: 13px 0;
+            padding: 14px 0;
             border-bottom: 1px solid #ddd;
+            transition: opacity 0.25s ease;
         }
 
         .work:first-of-type {
             border-top: 1px solid #ddd;
         }
 
+        .work:hover {
+            opacity: 0.5;
+        }
+
         .work-title {
-            font-size: 18px;
+            font-size: 17px;
         }
 
         .work-info {
-            font-size: 14px;
+            font-size: 13px;
             color: #777;
             text-align: right;
         }
 
+        /* CONTACT */
+
         .contact {
-            font-size: 22px;
+            font-size: 21px;
         }
+
+        /* FOOTER */
 
         footer {
             font-size: 12px;
             color: #888;
             padding-bottom: 30px;
         }
+
+        /* MOBILE */
 
         @media (max-width: 700px) {
 
@@ -127,20 +149,21 @@
 
             nav {
                 position: static;
-                margin-top: 40px;
+                margin-top: 35px;
                 gap: 18px;
             }
 
             header {
-                margin-bottom: 100px;
+                margin-bottom: 110px;
             }
 
             .name {
+                font-size: 48px;
                 letter-spacing: -2px;
             }
 
             section {
-                margin-bottom: 110px;
+                margin-bottom: 120px;
             }
 
             .about-text {
@@ -164,9 +187,9 @@
 
     <header>
 
-        <div class="name">
+        <a href="#" class="name">
             luciabrotoc
-        </div>
+        </a>
 
         <div class="subtitle">
             composer // music & performing arts
@@ -220,6 +243,15 @@
                     </div>
                 </div>
 
+                <div class="work">
+                    <div class="work-title">
+                        äänimeditaatio
+                    </div>
+
+                    <div class="work-info">
+                        2024 · cello & live electronics
+                    </div>
+                </div>
 
                 <div class="work">
                     <div class="work-title">
@@ -228,17 +260,6 @@
 
                     <div class="work-info">
                         2024 · wind ensemble
-                    </div>
-                </div>
-
-
-                <div class="work">
-                    <div class="work-title">
-                        äänimeditaatio
-                    </div>
-
-                    <div class="work-info">
-                        2024 · cello & live electronics
                     </div>
                 </div>
 
@@ -261,7 +282,6 @@
                     </div>
                 </div>
 
-
                 <div class="work">
                     <div class="work-title">
                         M'he ficat en un jardí
@@ -271,7 +291,6 @@
                         2026 · immersive theatre
                     </div>
                 </div>
-
 
                 <div class="work">
                     <div class="work-title">
