@@ -84,19 +84,40 @@
             margin-bottom: 110px;
         }
 
-        /* MEDIA */
+        //* GALLERY */
 
-        .media {
-            width: 100%;
-            aspect-ratio: 16 / 9;
-            background: #e8e8e5;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 110px;
-            color: #888;
-            font-size: 13px;
-        }
+.gallery {
+    width: 100%;
+    margin-bottom: 120px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 25px;
+}
+
+.gallery-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.gallery-row img {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+@media (max-width: 700px) {
+
+    .gallery-row {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+}
 
         /* CREDITS */
 
@@ -211,9 +232,42 @@
     </div>
 
 
-    <div class="media">
-        video / images
+    <div class="gallery">
+
+    <img src="../images/foto01.jpg" alt="lichtung">
+    
+    <div class="gallery-row">
+        <img src="../images/lichtung_01.jpg" alt="lichtung">
+        <img src="../images/lichtung_02.jpg" alt="lichtung">
     </div>
+
+    <img src="../images/foto04.jpg" alt="lichtung">
+
+    <div class="gallery-row">
+        <img src="../images/lichtung_03.jpg" alt="lichtung">
+        <img src="../images/lichtung_04.jpg" alt="lichtung">
+    </div>
+
+    <img src="../images/foto07.jpg" alt="lichtung">
+
+    <div class="gallery-row">
+        <img src="../images/lichtung_05.jpg" alt="lichtung">
+        <img src="../images/lichtung_06.jpg" alt="lichtung">
+    </div>
+
+    <img src="../images/lichtung_08.jpg" alt="lichtung">
+
+    <div class="gallery-row">
+        <img src="../images/foto11.jpg" alt="lichtung">
+        <img src="../images/foto12.jpg" alt="lichtung">
+    </div>
+
+    <div class="gallery-row">
+        <img src="../images/foto13.jpg" alt="lichtung">
+        <img src="../images/foto14.jpg" alt="lichtung">
+    </div>
+
+</div>
 
 
     <div class="credits">
